@@ -6,15 +6,11 @@ export default function Home() {
         <>
             <Navbar />
             <main>
-                <h1>Formation/Diplôme</h1>
+                <h1 className="title">Formation/Diplôme</h1>
                 <ul>
-                    <li>Python/Django</li>
-                    <li>Javascript/React/NextJS</li>
-                    <li>PostrgreSQL</li>
-                    <li>PHP/Symfony</li>
-                    <li>Linux</li>
-                    <li>Docker</li>
-                    <li>Git</li>
+                    <li>Obtention du titre professionnel DWWM</li>
+                    <li>BAC STI2D</li>
+                    <li>Certification Programme Kesk'IA</li> 
                 </ul>
 
             </main>

@@ -1,0 +1,63 @@
+// Variables de couleur
+$dark-violet: #2c004f;  // violet sombre
+$black: #000000;
+
+body, html, #__next {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, $dark-violet 60%, $black 100%);
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.navbar {
+  display: flex;
+  justify-content: center;  // centre horizontalement les items
+  align-items: center;
+  gap: 2rem;                // espace entre les liens
+  background-color: rgba(44, 0, 79, 0.8); // violet semi-transparent
+  padding: 1rem 0;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #b388ff; // un violet clair au hover
+  }
+}
+.title{
+  text-align: center;
+}
+.center-container {
+  text-align: center;
+}
+
+.center {
+  display: inline-block; // devient centrable dans le conteneur
+  padding: 0.75rem 1.5rem;
+  background-color: #7e3ff2; // violet stylé
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: #a57cff;
+  }
+}

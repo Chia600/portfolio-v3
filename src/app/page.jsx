@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        <h1></h1>
+        <h1 className="title">Bienvenu sur mon portfolio</h1>
         <p>
           Jeune développeur web et web mobile de 23 ans fraichement diplômé du
           titre professionnel DWWM. Passionné depuis mon enfance par la
@@ -19,6 +19,11 @@ export default function Home() {
           sont pas limités à la technologie ou le développement, d'autres sujets
           tels que la lecture, le cinéma, la musique et bien d'autres.
         </p>
+        <div className="center-container">
+          <a href="Benjamin_derisbourg_cv.pdf" target="_blank" rel="noopener noreferrer" className="center">
+          Télécharger mon CV
+          </a>
+        </div>
       </main>
     </>
   );

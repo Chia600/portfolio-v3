@@ -6,7 +6,7 @@ export default function Home() {
         <>
             <Navbar />
             <main>
-                <h1>Projets</h1>
+                <h1 className="title">Projets</h1>
                 <ul>
                     <li>Python/Django</li>
                     <li>Javascript/React/NextJS</li>
