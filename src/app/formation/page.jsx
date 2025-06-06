@@ -1,4 +1,5 @@
 import Navbar from "@/component/navbar.jsx";
+import "@/styles/formation.scss";
 
 
 export default function Home() {
@@ -7,10 +8,10 @@ export default function Home() {
             <Navbar />
             <main>
                 <h1 className="title">Formation/Diplôme</h1>
-                <ul>
+                <ul className="centerForm">
                     <li>Obtention du titre professionnel DWWM</li>
-                    <li>BAC STI2D</li>
                     <li>Certification Programme Kesk'IA</li> 
+                    <li>BAC STI2D</li>
                 </ul>
 
             </main>

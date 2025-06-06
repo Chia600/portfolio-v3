@@ -1,25 +1,16 @@
-import Navbar from "@/component/navbar.jsx";
+// pages/projects.js
+import Navbar from "@/component/navbar"
+import ProjectCarousel from "@/component/projetCarrousel";
+import "@/styles/projet.scss";
 
 
-export default function Home() {
-    return (
-        <>
-            <Navbar />
-            <main>
-                <h1 className="title">Projets</h1>
-                <ul>
-                    <li>Python/Django</li>
-                    <li>Javascript/React/NextJS</li>
-                    <li>PostrgreSQL</li>
-                    <li>PHP/Symfony</li>
-                    <li>Linux</li>
-                    <li>Docker</li>
-                    <li>Git</li>
-                </ul>
+const ProjectsPage = () => {
+  return (
+    <>
+      <Navbar />
+      <ProjectCarousel />
+    </>
+  );
+};
 
-            </main>
-            
-        </>
-    )
-        
-}
+export default ProjectsPage;

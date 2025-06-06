@@ -1,5 +1,5 @@
 import Navbar from "@/component/navbar.jsx";
-
+import "@/styles/experience.scss";
 
 export default function Home() {
     return (
