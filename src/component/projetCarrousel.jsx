@@ -16,7 +16,7 @@ const ProjectCarousel = () => {
     {
       id: 1,
       title: "Site vitrine Auto-école Chanth",
-      description: "Site vitrine pour une auto-école avec Django, Docker et PostgreSQL. Gestion des heures de conduite, commentaires, Question et authentification.",
+      description: "Site vitrine pour une auto-école avec Django, Docker et PostgreSQL. Gestion des heures de conduite, commentaires, questions et authentification.",
       img: "/auto-école1.png",
       technologies: ["Django", "Docker", "PostgreSQL"],
     //   liveUrl: "https://example.com",

@@ -11,7 +11,7 @@ export default function Home() {
                     <ul>
                         <li>Python/Django</li>
                         <li>Javascript/React/NextJS</li>
-                        <li>PostrgreSQL</li>
+                        <li>PostgreSQL</li>
                         <li>PHP/Symfony</li>
                         <li>Linux</li>
                         <li>Docker</li>
