@@ -1,4 +1,5 @@
 import Navbar from "@/component/navbar.jsx";
+import Footer from "@/component/footer";
 import "@/styles/experience.scss";
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
                 <a href="https://www.instagram.com/p/CqTIfowIzvg/?img_index=3" className="center">Lien de
                 l'Instagram</a></div>
             </main>
-            
+            <Footer />
         </>
     )
         

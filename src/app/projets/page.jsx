@@ -1,5 +1,6 @@
 // pages/projects.js
 import Navbar from "@/component/navbar"
+import Footer from "@/component/footer";
 import ProjectCarousel from "@/component/projetCarrousel";
 import "@/styles/projet.scss";
 
@@ -9,6 +10,7 @@ const ProjectsPage = () => {
     <>
       <Navbar />
       <ProjectCarousel />
+       <Footer />
     </>
   );
 };

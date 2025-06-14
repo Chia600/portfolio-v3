@@ -1,4 +1,5 @@
 import Navbar from "@/component/navbar.jsx";
+import Footer from "@/component/footer";
 import "@/styles/formation.scss";
 
 
@@ -13,9 +14,8 @@ export default function Home() {
                     <li>Certification Programme Kesk'IA</li> 
                     <li>BAC STI2D</li>
                 </ul>
-
             </main>
-            
+            <Footer />
         </>
     )
         

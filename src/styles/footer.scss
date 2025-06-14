@@ -1,0 +1,252 @@
+// Variables
+$footer-bg-color: rgba(17, 24, 39, 0.1); // Équivalent de bg-gray-900 mais transparent
+$footer-text-primary: rgba(255, 255, 255, 0.9);
+$footer-text-secondary: rgba(209, 213, 219, 0.8); // text-gray-300 transparent
+$footer-text-muted: rgba(156, 163, 175, 0.7); // text-gray-400 transparent
+$footer-accent-color: rgba(96, 165, 250, 0.9); // text-blue-400 transparent
+$footer-border-color: rgba(55, 65, 81, 0.3); // border-gray-700 transparent
+$footer-padding: 3rem 1.5rem; // py-12 px-6
+$footer-margin-top: 5rem; // mt-20
+
+// Footer principal
+footer {
+  background-color: $footer-bg-color;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: $footer-text-primary;
+  padding: $footer-padding;
+  margin-top: $footer-margin-top;
+  border-top: 1px solid $footer-border-color;
+  position: relative;
+  
+  // Effet de transparence avec dégradé
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(17, 24, 39, 0.05) 0%,
+      rgba(17, 24, 39, 0.15) 100%
+    );
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  // Conteneur principal (max-w-6xl mx-auto)
+  .max-w-6xl {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  // Layout horizontal centré
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+
+  // Section Contact - Centré horizontalement
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    // Titre de section (text-xl font-bold mb-4 text-blue-400)
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: $footer-accent-color;
+      opacity: 0.9;
+      transition: opacity 0.3s ease;
+      text-align: center;
+      
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    // Conteneur des informations de contact (space-y-3) - Horizontal sur desktop
+    .space-y-3 {
+      > * + * {
+        margin-top: 0.75rem;
+      }
+
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        
+        > * + * {
+          margin-top: 0;
+        }
+      }
+
+      // Éléments de contact (flex items-center space-x-3)
+      .flex {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        justify-content: center;
+
+        // Icônes (text-blue-400)
+        svg {
+          color: $footer-accent-color;
+          opacity: 0.8;
+          transition: all 0.3s ease;
+        }
+
+        // Texte (text-gray-300)
+        span {
+          color: $footer-text-secondary;
+          transition: color 0.3s ease;
+        }
+
+        &:hover {
+          svg {
+            opacity: 1;
+            transform: scale(1.1);
+          }
+          
+          span {
+            color: $footer-text-primary;
+          }
+        }
+      }
+    }
+
+    // Réseaux sociaux (flex space-x-4 mt-6) - Une seule ligne
+    .space-x-4 {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; // Force une seule ligne
+
+      // Liens sociaux
+      a {
+        color: $footer-text-secondary;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.05);
+        flex-shrink: 0; // Empêche la réduction des icônes
+        
+        &:hover {
+          color: $footer-accent-color;
+          background-color: rgba(96, 165, 250, 0.1);
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(96, 165, 250, 0.2);
+        }
+
+        svg {
+          transition: transform 0.3s ease;
+        }
+
+        &:hover svg {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  // Séparateur (border-t border-gray-700 pt-8)
+  .border-t {
+    border-top: 1px solid $footer-border-color;
+    padding-top: 2rem;
+
+    // Conteneur du bas (flex flex-col md:flex-row justify-between items-center)
+    .flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+
+      // Texte copyright (text-gray-400 text-sm)
+      p {
+        color: $footer-text-muted;
+        font-size: 0.875rem;
+        margin: 0;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+
+        &:first-child {
+          margin-bottom: 1rem;
+
+          @media (min-width: 768px) {
+            margin-bottom: 0;
+          }
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+// Variante complètement transparente
+.footer-transparent {
+  background-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-top: none;
+
+  &::before {
+    display: none;
+  }
+}
+
+// Variante avec effet glassmorphism
+.footer-glassmorphism {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+// Animation d'apparition
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  animation: fadeInUp 0.6s ease-out;
+}

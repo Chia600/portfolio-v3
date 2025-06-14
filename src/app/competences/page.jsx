@@ -1,3 +1,4 @@
+import Footer from "@/component/footer";
 import Navbar from "@/component/navbar.jsx";
 import "@/styles/competences.scss";
 
@@ -19,6 +20,7 @@ export default function Home() {
                     </ul>
                 </div>
             </main>
+            <Footer />
             
         </>
     )

@@ -1,3 +1,4 @@
+import Footer from "@/component/footer.jsx";
 import Navbar from "../component/navbar.jsx";
 
 
@@ -28,6 +29,7 @@ export default function Home() {
           </a>
         </div>
       </main>
+      <Footer />
     </>
   );
 }
