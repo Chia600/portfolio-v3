@@ -40,7 +40,7 @@ const Footer = () => {
                 <Github size={24} />
               </a>
               <a 
-                href="https://linkedin.com/in/votre-profile" 
+                href="https://www.linkedin.com/in/benjamin-derisbourg-1a025a2a2/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-blue-400 transition-colors"
