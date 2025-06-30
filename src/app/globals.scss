@@ -10,8 +10,10 @@ body, html, #__next {
   background: linear-gradient(135deg, $dark-violet 60%, $black 100%);
   color: #fff;
 }
-p{
-  margin: 0 auto;
+.margin{
+  margin-left: 5%;
+  margin-right: 5%;
+
 }
 .container {
   max-width: 1200px;

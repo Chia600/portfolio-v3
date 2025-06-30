@@ -8,7 +8,7 @@ export default function Home() {
       <Navbar />
       <main>
         <h1 className="title">Bienvenue sur mon portfolio</h1>
-        <p>
+        <p className="margin">
           Jeune développeur web et web mobile de 23 ans
            fraîchement diplômé du titre professionnel DWWM.
             Je suis passionné depuis mon enfance par la technologie puis le développement 
